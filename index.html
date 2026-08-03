@@ -141,6 +141,34 @@
     </footer>
 
     <script src="./index_files/script.js.download"></script>
+    <script>
+        // Select all target elements
+        const fadeElements = document.querySelectorAll('.fade-in');
+
+        // Configure the observer options
+        const observerOptions = {
+        root: null,         // Uses the browser viewport
+        threshold: 0.1,     // Triggers when 10% of the element is visible
+        rootMargin: "0px"   // No offset margin
+        };
+
+        // Create the observer instance
+        const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            // Check if the element has scrolled into view
+            if (entry.isIntersecting) {
+            entry.target.classList.add('appear');
+            // Stop tracking once it has faded in (optional)
+            observer.unobserve(entry.target); 
+            }
+        });
+        }, observerOptions);
+
+        // Attach the observer to each element
+        fadeElements.forEach(element => {
+        observer.observe(element);
+        });
+    </script>
 
  <div id="give-freely-root-kkkbiiikppgjdiebcabomlbidfodipjg" class="give-freely-root" data-extension-id="kkkbiiikppgjdiebcabomlbidfodipjg" data-extension-name="Substital: Add subtitles to videos and movies" style="display: block;"><template shadowrootmode="open"><style>
   :host {
