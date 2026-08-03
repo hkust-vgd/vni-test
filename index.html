@@ -91,7 +91,7 @@
                 <section class="research-section">
                     <h2>AI for Coral Reef Monitoring</h2>
                     <p>Coral reefs are vital marine ecosystems, but monitoring them at scale remains difficult due to underwater visibility, ecological complexity, and the need for expert annotation. We develop AI systems such as CoralSCOP to segment coral reef images across diverse underwater environments, enabling scalable coral monitoring, health assessment, and restoration support.</p>
-                    <div class="research-image">
+                    <div class="research-image fade-in">
                         <img src="./index_files/coral_reef_monitoring.jpeg" alt="AI for Coral Reef Monitoring" class="research-img">
                     </div>
                 </section>
@@ -99,7 +99,7 @@
                 <section class="research-section">
                     <h2>Marine Foundation Models for Individual Creature Monitoring</h2>
                     <p>Marine environments contain diverse organisms, habitats, and visual conditions that challenge conventional AI models. We develop marine foundation models such as MarineInst to recognize, segment, and describe individual marine organisms at instance level, supporting biodiversity analysis, ecological interpretation, and AI-assisted marine science.</p>
-                    <div class="research-image">
+                    <div class="research-image fade-in">
                         <img src="./index_files/marine_foundation_models.jpeg" alt="Marine Foundation Models" class="research-img">
                     </div>
                 </section>
@@ -107,7 +107,7 @@
                 <section class="research-section">
                     <h2>Marine Video Understanding</h2>
                     <p>Marine videos contain sparse yet meaningful events, from species interactions to habitat changes and human activities. We develop event-centric Marine AI systems such as MarineEVT, where vision-language models learn to use visual tools for temporal and spatial grounding, enabling more reliable and comprehensive reasoning over underwater videos. This research opens a new direction for advanced marine-specific AI agents trained on a diverse suite of tools, enabling them to autonomously conduct ecological discovery, biodiversity monitoring, and sustainable ocean observation.</p>
-                    <div class="research-image">
+                    <div class="research-image fade-in">
                         <img src="./index_files/marine_video_understanding.jpeg" alt="Marine Video Understanding" class="research-img">
                     </div>
                 </section>
@@ -120,7 +120,7 @@
                 <section class="research-section">
                     <h2>SSC2</h2>
                     <p>...</p>
-                    <div class="research-image">
+                    <div class="research-image fade-in">
                         <iframe referrerPolicy="strict-origin-when-cross-origin" width="900" height="400" src="https://www.youtube.com/embed/CA9J96sAjyI?si=QkiQcLoSUwCkqU6L" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
                     
@@ -187,4 +187,17 @@
   dialog.backdrop-hidden::backdrop  {
     background-color: transparent;
   }
+
+    .fade-in {
+    opacity: 0;
+    transform: translateY(20px); /* Optional: slight slide-up effect */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+
+    /* This class will be appended by JavaScript */
+    .fade-in.appear {
+    opacity: 1;
+    transform: translateY(0);
+    }
+
 </style><div><div class="gf-app"></div></div></template></div></body></html>
