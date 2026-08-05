@@ -66,7 +66,7 @@ ul {
 }
 
 section {
-    padding: 4rem 0;
+    padding: 2rem 0;
 }
 
 /* Header Styles */
@@ -1847,8 +1847,8 @@ footer {
 
 /* Research Section Styles */
 .research-section {
-    margin-bottom: 60px;
-    padding-bottom: 40px;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
     border-bottom: 1px solid #eee;
 }
 
@@ -1863,6 +1863,10 @@ footer {
     font-size: 1.8em;
     margin-bottom: 20px;
     font-weight: 600;
+}
+
+.research-section p {
+    text-align: justify;
 }
 
 .research-section .research-image {
